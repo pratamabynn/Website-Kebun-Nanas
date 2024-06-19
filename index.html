@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" href="./assets/Image/Logo/logo_notext3.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="./style.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"/>
+		<title>Pemetaan Kebun Nanas - Kelompok 11 SIG-B</title>
+	</head>
+	
+	<body>
+            <!-- Navigation -->
+            <nav class="navbar">
+                <div class="logo">
+                    <a href=""><img src="./assets/Image/Logo/logo 1.png" class="putih"/></a>
+                    <a href=""><img src="./assets/Image/Logo/logo 2.png" class="hitam"/></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="./map_qgis/map_qgis.html">Maps</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="full-screen">
+                <div class="overlay"></div>
+                <!-- Home -->
+                <header id="home">
+                    <div class="bgimg">
+                        <img src="./assets/Image/Background/Banner-Homepage-4.jpg" />
+                    </div>
+                    <div class="welcome">
+                        <h3>WELCOME!!</h3>
+                        <p>Pemetaan Kebun Nanas</p>
+                        <button class="button">More Info</button>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ffffff" fill-opacity="1" d="M0,224L80,208C160,192,320,160,480,170.7C640,181,800,235,960,250.7C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                      </svg>
+                </header>
+
+                <main>
+                    <!-- About -->
+                    <section id="about">
+                        <div class="screen-in">
+                            <h3>ABOUT</h3>
+                            <p class="content">
+                                Lampung Tengah di Provinsi Lampung dikenal sebagai salah satu daerah penghasil nanas terbesar di Indonesia, dengan sejarah budidaya yang telah ada sejak lama. 
+                                Produksi nanas di daerah ini cukup besar dan banyak diekspor ke berbagai negara serta disalurkan ke industri pengolahan dalam negeri. 
+                                Terdapat beberapa varietas nanas yang dibudidayakan, seperti Queen yang memiliki ukuran kecil hingga sedang dengan daging buah manis dan sedikit berserat, 
+                                Cayenne yang lebih besar dengan rasa manis dan sedikit asam, serta Smooth Cayenne yang sering digunakan untuk pengalengan dan pengolahan karena ukurannya yang besar dan rasa yang manis.
+                            </p>
+                            <div class="layer">
+                                <div>
+                                    <img src="./assets/Image/Icon/soil_moisture.png"/>
+                                    <h6>Soil Moisture</h6>
+                                    <p>Nanas tumbuh dengan baik di tanah yang memiliki drainase baik, seperti tanah berpasir atau tanah lempung berpasir. Tanah yang terlalu liat atau terlalu banyak mengandung air bisa menyebabkan akar tanaman nanas membusuk. 
+                                       Nanas lebih menyukai tanah dengan pH antara 4.5 hingga 6.5. Nanas membutuhkan iklim tropis dengan curah hujan yang cukup. 
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="./assets/Image/Icon/temperature.png"/>
+                                    <h6>Temperature</h6>
+                                    <p>Suhu ideal untuk pertumbuhan nanas adalah antara 24-30°C. Suhu yang terlalu tinggi atau terlalu rendah bisa mempengaruhi pertumbuhan dan kualitas buah. 
+                                        Kelembaban tanah harus dijaga agar tidak terlalu kering atau terlalu basah. Penggunaan teknologi pengukuran kelembaban tanah dapat membantu petani untuk menentukan waktu dan jumlah irigasi yang diperlukan.
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="./assets/Image/Icon/irigation.png"/>
+                                    <h6>Irigation</h6>
+                                    <p>Sistem irigasi tetes (<i>drip irrigation</i>) sering digunakan dalam budidaya nanas karena bisa memberikan air secara efisien langsung ke zona akar, mengurangi kehilangan air akibat penguapan dan limpasan.
+                                       Nanas membutuhkan penyiraman yang cukup, terutama pada masa awal pertumbuhan. Namun, tanaman nanas juga tahan terhadap kekeringan hingga batas tertentu.
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="./assets/Image/Icon/Street.png"/>
+                                    <h6>Street</h6>
+                                    <p>Jalan dan akses ke kebun nanas sangat penting untuk distribusi hasil panen. Kondisi jalan yang baik memudahkan transportasi buah nanas dari kebun ke pasar atau tempat pengolahan.
+                                       Pemeliharaan rutin jalan menuju kebun harus dilakukan untuk memastikan kelancaran distribusi. Ini bisa melibatkan perbaikan jalan tanah atau pengaspalan jalan utama yang sering dilalui.
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="button">More Info</button>
+                        </div>
+                    </section>
+                    <!-- Quote -->
+                    <section id="quote">
+                        <div class="screen-in">
+                            <p class="content">
+                                Membangun sistem pemetaan kebun nanas di Lampung Tengah memerlukan pemahaman mendalam tentang kondisi tanah, iklim, irigasi, dan aksesibilitas. 
+                                Dengan memanfaatkan teknologi seperti GIS, sensor IoT, drone, dan analisis data, Anda dapat menciptakan peta yang komprehensif dan membantu dalam pengelolaan kebun nanas secara efektif. 
+                                Hal ini tidak hanya akan meningkatkan produktivitas tetapi juga keberlanjutan budidaya nanas di daerah tersebut.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Team -->
+                    <section id="team">
+                        <div class="screen-in">
+                            <h3>Our Team</h3>
+                            <p class="content">
+                                Kelompok 11 SIG-B
+                            </p>
+                            <div class="tim">
+                                <div>
+                                    <img src="./assets/Image/Profile/Profile1.png" />
+                                    <h6>Arbian Alex Pritama</h6>
+                                    <span>2155061013</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/Image/Profile/Profile2.png" />
+                                    <h6>Chandrika Gita Permata</h6>
+                                    <span>2155061010</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/Image/Profile/Profile3.png" />
+                                    <h6>Salma Atha Nabila</h6>
+                                    <span>2155061004</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <footer>
+                    <div class="screen-in">
+                        <div class="copyright">
+                            &copy; 2024 Pemetaan Kebun Nanas - Kelompok 11 SIG B
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"></script>
+		<script src="javascript.js"></script>
+	</body>
+</html>

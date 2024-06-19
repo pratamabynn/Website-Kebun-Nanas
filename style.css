@@ -1,0 +1,333 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ background-color: #ffffff;
+ color: #000000;
+ font-family: Montserrat;
+ font-size: 15px;
+}
+
+.full-screen {
+  width: 100%;
+}
+
+/*Pengaturan Navbar*/
+.navbar {
+ z-index: 100;
+ width: 100%;
+ height: 9vh;
+ color: #000000;
+ justify-content: space-between;
+ display: flex;
+ position: fixed;
+ transition: background-color 0.5s ease;
+}
+
+.navbar.putih {
+  background-color: #F3CA52;
+}
+
+.navbar .logo {
+  margin-left: 6vh;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+
+.navbar .logo img {
+  width: 34vh;
+}
+
+.navbar .menu {
+  text-align: center;
+  margin: 0.5vh 6vh 0vh 0vh;
+  height: 60px;
+  max-width: 60%;
+}
+
+.navbar .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+  font-weight: bold;
+  letter-spacing: 0,9px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-align: center;
+  padding: 0vh 2vh;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #F3CA52;
+}
+
+nav .putih .tombol-menu .garis {
+  background-color: #fff;
+}
+
+nav.putih ul li a {
+  color: #0A6847;
+}
+
+nav.putih ul li a:hover {
+  color: #333;
+}
+
+nav .logo img.hitam {
+  display: none;
+}
+
+/* pengaturan header */
+header {
+  position: relative;
+  height: 100vh; /* Set the header to full viewport height */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .bgimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bgimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the entire div without distortion */
+}
+
+header .welcome {
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  z-index: 100;
+}
+
+header .welcome h3 {
+  font-size: 6vh;
+  padding: 0;
+}
+
+header .welcome p {
+  margin-top: 2vh;
+  font-size: 25px;
+}
+
+header svg{
+  position: absolute;
+  bottom: -5vh;
+}
+
+/*pengaturan main dan about*/
+.screen-in {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+section {
+  padding: 3vh 5vh;
+}
+
+section h3 {
+  color: #0A6847;
+  font-size: 4.5vh;
+}
+
+section h3::after {
+  content: "";
+  border-bottom: 5px solid #F3CA52;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+}
+
+#about {
+  text-align: center;
+}
+
+section p.content {
+  color: #333;
+  margin: 3vh 0vh;
+  line-height: 3vh;
+}
+
+/*pengaturan layer*/
+.layer {
+  display: flex;
+}
+.layer div {
+  text-align: center;
+  width: 26%;
+}
+
+.layer img {
+  width: 20vh;
+}
+
+.layer h6 {
+  color: #0A6847;
+  margin: 1.5vh 0vh;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.layer p {
+  margin: 1vh;
+  width: 90%;
+  text-align: center;
+  line-height: 3.5vh;
+}
+
+/*pengaturan maps dan button*/
+header button {
+  margin: 2vh;
+  padding: 1.5vh 2vh;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  background-color: #F3CA52;
+  border: 0.3vh solid #F3CA52;
+  border-radius: 10px;
+  box-shadow: 5px 4px 10px #333;
+}
+
+header button:hover, button:focus {
+  background-color: #0A6847;
+  border: 0.3vh solid #fff;
+  color: #fff;
+}
+
+#about button {
+  margin: 2vh;
+  padding: 1.5vh 2vh;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0A6847;
+  border: 0.3vh solid #fff;
+  border-radius: 10px;
+}
+
+#about button:hover, button:focus {
+  background-color: #F3CA52;
+  border: 0.3vh solid #333;
+  color: #333;
+}
+
+/*pengaturan quote*/
+#quote{
+  padding: 6vh 0vh;
+  text-align: center;
+  background-color: #0A6847;
+}
+
+#quote p.content{
+  color: #fff;
+  line-height: 4vh;
+  font-size: 20px;
+}
+
+/*pengaturan team*/
+#team {
+  text-align: center;
+  padding: 8vh 0vh;
+}
+
+.tim{
+  margin: 5vh 0vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tim div {
+  text-align: center;
+  width: 26%;
+}
+
+.tim img {
+  width: 30vh;
+  box-shadow: 0px -10px 30px #ccc;
+  border-radius: 10px;
+}
+
+.tim h6 {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+section#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+
+section#gallery div {
+  padding: 10px;
+}
+
+section#gallery div img {
+  height: 100px;
+  border-radius: 5px;
+}
+
+section#gallery div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+/*pengaturan footer*/
+footer {
+  padding: 0vh 0vh 4vh;
+  background-color: #0A6847;
+  color: #fff;
+}
+
+footer .screen-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .screen-in div {
+  width: 20%;
+  text-align: center;
+}
+
+footer .screen-in .copyright {
+  width: 100%;
+  margin-top: 30px;
+  line-height: 5vh;
+  border-bottom: 1px solid #ffffff;
+}
