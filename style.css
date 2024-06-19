@@ -22,7 +22,8 @@ body {
  color: #000000;
  justify-content: space-between;
  display: flex;
- position: fixed;
+ position: fixed !important;
+ top: 0 !important;
  transition: background-color 0.5s ease;
 }
 
@@ -178,12 +179,9 @@ section p.content {
 }
 
 /*pengaturan layer*/
-.layer {
-  display: flex;
-}
+
 .layer div {
   text-align: center;
-  width: 26%;
 }
 
 .layer img {
@@ -261,14 +259,11 @@ header button:hover, button:focus {
 
 .tim{
   margin: 5vh 0vh;
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
 .tim div {
   text-align: center;
-  width: 26%;
 }
 
 .tim img {
